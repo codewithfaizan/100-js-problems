@@ -16,3 +16,16 @@ function oddeven(num){
         console.log(`even number`);
     }
 } oddeven(8)
+
+
+
+
+
+
+
+
+
+
+
+
+
