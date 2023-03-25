@@ -3,14 +3,15 @@
 // using console.log() method
 console.log('Hello World!');
 console.log(`Hello` + `World!`);
-console.log(`Hello`+ ` `+ `World` + `!`);
+console.log(`Hello`+ ``+ `World` + `!`);
 console.info("heyworld");
 
+console.log('Hello World!')
 
 //using variable
 var a = 'Hello', b = "World";
 console.log(a + b);
-console.log(`${a}    ${b}`);
+console.log(`${a}  ${b}`);
 console.log(`${a}${b}`);
 console.log(`${a} abcd1234!@#$?":{} ${b}`);
 console.log(a+' '+b);
@@ -21,11 +22,6 @@ const printstring = (string) => {
 };
 
 printstring("Hello.World!");
-
-
-
-
-
 
 //using function name created by own
 const {log: printf} = console;

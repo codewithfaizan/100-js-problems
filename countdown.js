@@ -1,28 +1,36 @@
-// Function
+let main = () => {
+  const userDateStr = "2023-03-22";
+  const userDate = new Date(userDateStr);
+
+  // get today's date
+  const today = new Date();
+  console.log(Date.parse(today),"Future Date",today)
+  
+  console.log(Date.parse(userDate),"Today Live Date",userDate)
 
 
-let main = (year,month,date,hour,min,sec)=>{
-let aajkidate= Date.parse(new Date());
-// console.log(aajkidate)
+  // calculate time difference in milliseconds
+  const timeDiffMs = userDate.getTime() - today.getTime();
 
-let userkidate = Date.parse(new Date(year,month,date,hour,min,sec))
-// console.log(userkidate)
+  console.log(timeDiffMs,"DIFF");
 
-let diff =   userkidate-aajkidate;
-// console.log(diff) // yeh milli seconds me hai
-let milliToSec = diff/1000;
-let secToMin = milliToSec/60;
-let minToHour = secToMin/60;
-let hourToDay = minToHour/24
-console.log(`Seconds`,milliToSec.toFixed(2))
-console.log(`Hour's`,minToHour.toFixed(2))
-console.log(`Day's`,hourToDay.toFixed(2))
-// console.log(secToMin)
+  // calculate number of days
+  const days = Math.floor(timeDiffMs / (1000 * 60 * 60 * 24));
 
-}
+  // calculate number of hours
+  const hours = Math.floor(
+    (timeDiffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
 
-main(2022,02,22,10,0,0,0)
+  // calculate number of minutes
+  const minutes = Math.floor((timeDiffMs % (1000 * 60 * 60)) / (1000 * 60));
 
-// end date abb kal ki daal 22
+  // calculate number of seconds
+  const seconds = Math.floor((timeDiffMs % (1000 * 60)) / 1000);
 
-// ust ki 22 date hona hai wait
+  console.log(
+    `Days: ${days}, Hours: ${hours}, Minutes: ${minutes}, Seconds: ${seconds}`
+  );
+};
+
+main();
