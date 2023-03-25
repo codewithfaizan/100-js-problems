@@ -24,6 +24,3 @@
 
 //   const half = ({max,min}) => (max+min)
 // return half()
-
-// ..sudo
-// 
