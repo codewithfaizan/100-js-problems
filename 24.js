@@ -6,11 +6,14 @@
 // let result = capitalize("hinder")
 // console.log(result)
 
+let findVowel = (string) => {
+    
+    let count = string.match(/[aeiou]/ig);
 
-// 
+    console.log(count)
 
-// let findVowel = (string) => {
-//     let count = string.match(/[aeiou]/ig).length;
-//     return count ;
-// }
-// console.log(findVowel("Marvelous"))
+    return count.length ;
+}
+console.log(findVowel("Marvelous"));
+
+
