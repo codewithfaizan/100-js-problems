@@ -18,5 +18,4 @@ const student = {
     delete student['score'];
 // }
 
-// let result = removeEl();
 console.log(student)
