@@ -4,4 +4,3 @@ console.log(a + b);
 
 // using function
 function addition(c,d){return c+d;} console.log(addition(20,10));
-// -------------------------------------------------------------
