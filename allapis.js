@@ -1,4 +1,4 @@
-fetch(('https://jsonplaceholder.typicode.com/todos/1'), {
+let fetchData = fetch(('https://jsonplaceholder.typicode.com/todos/1'), {
     method : 'GET' ,
     headers :{
         application : application/json
