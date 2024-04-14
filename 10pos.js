@@ -6,5 +6,5 @@ function check(num){
         else { return 'zero'} }
     else {return 'positive'}
 }
-result = check(-6)
+let result = check(-6)
 console.log(result);

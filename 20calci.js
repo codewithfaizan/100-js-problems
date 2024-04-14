@@ -2,7 +2,7 @@
 
 function calculator(number1,number2,operation){
     let result;
-    if (operation == 'add') {
+    if (operation == 'add' || '+') {
         result = number1 + number2;
     }
     else if (operation == 'subt') {
@@ -16,4 +16,4 @@ function calculator(number1,number2,operation){
     }
 console.log(result);
 }
-calculator(1,2,"div")
+calculator(1,2,'+')

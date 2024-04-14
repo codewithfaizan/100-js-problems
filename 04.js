@@ -5,13 +5,15 @@
 
 //using function
 function aot(base,height){
-    console.log(1/2*(base*height));
+    var area = 1/2 * (base*height)
+    console.log(area);
 }
-aot(5,4)
+aot(12, 20)
 
 
 //without using function
 // let base = 5, height = 10
 // let area = 1/2*(base*height);
 // console.log(area);
+
 
